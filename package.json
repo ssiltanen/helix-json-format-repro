@@ -1,0 +1,17 @@
+{
+  "name": "helix-json-format-repro",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node --experimental-strip-types index.ts",
+    "build": "tsc",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "description": "Reproduce helix not running json formatter",
+  "devDependencies": {
+    "@types/node": "22.16.3",
+    "prettier": "3.6.2",
+    "typescript": "5.8.3"
+  }
+}

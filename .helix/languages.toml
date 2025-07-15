@@ -9,7 +9,7 @@ auto-format = true
 formatter = { command = "npx", args = [
   "prettier",
   "--stdin-filepath",
-  "${buffer_name}",
+  "%{buffer_name}",
 ] }
 language-servers = [{ name = "vscode-json-language-server" }]
 
@@ -19,6 +19,6 @@ auto-format = true
 formatter = { command = "npx", args = [
   "prettier",
   "--stdin-filepath",
-  "${buffer_name}",
+  "%{buffer_name}",
 ] }
 language-servers = [{ name = "typescript-ls" }]

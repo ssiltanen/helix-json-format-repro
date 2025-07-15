@@ -60,7 +60,7 @@ Helix [.helix/languages.toml](.helix/languages.toml) configures the json languag
 [[language]]
 name = "json"
 auto-format = true
-formatter = { command = "npx", args = ["prettier", "--stdin-filepath", "${buffer_name}"] }
+formatter = { command = "npx", args = ["prettier", "--stdin-filepath", "%{buffer_name}"] }
 language-servers = [{ name = "vscode-json-language-server" }]
 ```
 
